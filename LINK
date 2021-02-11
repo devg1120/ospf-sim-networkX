@@ -1,0 +1,33 @@
+RouterA node !=2: 10.3.2.0 {'RouterD': 100000.0, 'RouterC': 100000.0, 'RouterB': 100000.0}
+RouterA node > 1: 10.3.1.0 {'RouterC': 100000.0, 'RouterA': 100000.0}
+RouterA node !=2: 10.2.1.0 {'RouterA': 100000.0}
+RouterA node > 1: 10.2.2.0 {'RouterB': 100000.0, 'RouterA': 100000.0}
+RouterA node !=2: 10.2.4.0 {'RouterC': 100000.0}
+RouterA node !=2: 10.2.5.0 {'RouterD': 100000.0}
+RouterA node !=2: 10.2.3.0 {'RouterB': 100000.0}
+
+RouterC node !=2: 10.3.2.0 {'RouterD': 100000.0, 'RouterC': 100000.0, 'RouterB': 100000.0}
+RouterC node > 1: 10.3.1.0 {'RouterC': 100000.0, 'RouterA': 100000.0}
+RouterC node !=2: 10.2.1.0 {'RouterA': 100000.0}
+RouterC node > 1: 10.2.2.0 {'RouterB': 100000.0, 'RouterA': 100000.0}
+RouterC node !=2: 10.2.4.0 {'RouterC': 100000.0}
+RouterC node !=2: 10.2.5.0 {'RouterD': 100000.0}
+RouterC node !=2: 10.2.3.0 {'RouterB': 100000.0}
+
+RouterB node !=2: 10.3.2.0 {'RouterD': 100000.0, 'RouterC': 100000.0, 'RouterB': 100000.0}
+RouterB node > 1: 10.3.1.0 {'RouterC': 100000.0, 'RouterA': 100000.0}
+RouterB node !=2: 10.2.1.0 {'RouterA': 100000.0}
+RouterB node > 1: 10.2.2.0 {'RouterB': 100000.0, 'RouterA': 100000.0}
+RouterB node !=2: 10.2.4.0 {'RouterC': 100000.0}
+RouterB node !=2: 10.2.5.0 {'RouterD': 100000.0}
+RouterB node !=2: 10.2.3.0 {'RouterB': 100000.0}
+
+RouterD node !=2: 10.3.2.0 {'RouterD': 100000.0, 'RouterC': 100000.0, 'RouterB': 100000.0}
+RouterD node > 1: 10.3.1.0 {'RouterC': 100000.0, 'RouterA': 100000.0}
+RouterD node !=2: 10.2.1.0 {'RouterA': 100000.0}
+RouterD node > 1: 10.2.2.0 {'RouterB': 100000.0, 'RouterA': 100000.0}
+RouterD node !=2: 10.2.4.0 {'RouterC': 100000.0}
+RouterD node !=2: 10.2.5.0 {'RouterD': 100000.0}
+RouterD node !=2: 10.2.3.0 {'RouterB': 100000.0}
+
+

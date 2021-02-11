@@ -1,0 +1,8 @@
+echo $#
+#ps -eafw | grep -i [a]ctorad | grep -v grep | awk '{print $2}' | xargs  echo 
+
+#if [ $# != 0 ]; then
+   echo kill
+   ps -eafw | grep -i [a]ctorad | grep -v grep | awk '{print $2}' | xargs  kill -9
+#fi
+#ps -eafw | grep -i [a]ctorad | grep -v grep | xargs kill -9

@@ -1,0 +1,11 @@
+echo  "-pid-        -cmd-"
+#echo "__________________________________"
+ps -eafw | grep -i [a]ctorad | awk '{printf "%-12s %s\n",$2,$8}' 
+
+echo ""
+
+echo  "-cmd-        -pid-    -pr-     -socket port-"
+#echo "____________________________________________"
+ps -eafw | grep -i [a]ctorad | awk '{print $2}' | xargs -IXXX lsof -p XXX | grep IPv4 \
+         | awk '{printf "%-12s %-8s %-8s %s\n",$1,$2,$8,$9}'
+

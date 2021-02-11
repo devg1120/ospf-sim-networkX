@@ -1,0 +1,33 @@
+ RouterA                   neighbors
+ RouterA                   RouterA => RouterC ('eth2', '10.3.1.254', '255.255.255.0')
+ RouterA                   RouterA => RouterB ('eth1', '10.2.2.254', '255.255.255.0')
+ RouterA                   routetable
+ RouterA                   10.2.4.0        255.255.255.0   100000.0   eth2 10.3.1.254
+ RouterA                   10.3.1.0        255.255.255.0   100000.0   eth2 -
+ RouterA                   10.2.1.0        255.255.255.0          0   eth0 -
+ RouterA                   10.2.2.0        255.255.255.0 10000000.0   eth1 -
+ RouterA                   10.3.2.0        255.255.255.0   100000.0   eth1 10.2.2.254
+ RouterA                   10.2.3.0        255.255.255.0   100000.0   eth1 10.2.2.254
+ RouterA                   0.0.0.0               0.0.0.0   100000.0   eth2 10.3.1.254
+         RouterB           neighbors
+         RouterB           RouterB => RouterA ('eth1', '10.2.2.1', '255.255.255.0')
+         RouterB           RouterB => RouterC ('eth2', '10.3.2.254', '255.255.255.0')
+         RouterB           routetable
+         RouterB           10.2.4.0        255.255.255.0   100000.0   eth2 10.3.2.254
+         RouterB           10.3.1.0        255.255.255.0   200000.0   eth2 10.3.2.254
+         RouterB           10.2.1.0        255.255.255.0   100000.0   eth1 10.2.2.1
+         RouterB           10.2.2.0        255.255.255.0   100000.0   eth1 -
+         RouterB           10.3.2.0        255.255.255.0          0   eth2 -
+         RouterB           10.2.3.0        255.255.255.0          0   eth0 -
+         RouterB           0.0.0.0               0.0.0.0   100000.0   eth1 10.2.2.1
+                 RouterC   neighbors
+                 RouterC   RouterC => RouterA ('eth1', '10.3.1.1', '255.255.255.0')
+                 RouterC   RouterC => RouterB ('eth2', '10.3.2.1', '255.255.255.0')
+                 RouterC   routetable
+                 RouterC   10.2.4.0        255.255.255.0          0   eth0 -
+                 RouterC   10.3.1.0        255.255.255.0   100000.0   eth1 -
+                 RouterC   10.2.1.0        255.255.255.0   100000.0   eth1 10.3.1.1
+                 RouterC   10.2.2.0        255.255.255.0   200000.0   eth2 10.3.2.1
+                 RouterC   10.3.2.0        255.255.255.0   100000.0   eth2 -
+                 RouterC   10.2.3.0        255.255.255.0   100000.0   eth2 10.3.2.1
+                 RouterC   0.0.0.0               0.0.0.0   100000.0   eth2 10.3.2.1
