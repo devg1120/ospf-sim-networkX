@@ -186,18 +186,7 @@ class NIC(ActorTypeDispatcher):
             packet.source_ip = self._address
             self._asys.ask(self.subnet_actor_addr, packet)
 
-#        if isinstance(packet.packet, ospf.HelloPacket):
-#            print("     HelloPacket")
-#        if isinstance(packet.packet, ospf.LinkStatePacket):
-#            print("     LinkStatePacket")
 
-    #def receiveMessage(self, message, sender):
-#    def receiveMessage(self, packet, sender):
-#        print("receive packet")
-#        if isinstance(packet, ospf.HelloPacket):
-#            print("     HelloPacket")
-#        if isinstance(packet, ospf.LinkStatePacket):
-#            print("     LinkStatePacket")
 
 
 
